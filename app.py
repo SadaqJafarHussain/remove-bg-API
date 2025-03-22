@@ -80,3 +80,6 @@ def remove_background():
     output_io = process_image(uploaded_file.read())
 
     return send_file(output_io, mimetype='image/png')
+if __name__ == '__main__':
+    port = os.environ.get("PORT", 5000)  # Default to 5000 if no PORT env var
+    app.run(host="0.0.0.0", port=port)
