@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from rembg import remove
